@@ -1,0 +1,23 @@
+<div class="mobileTab">
+    <div class="tabItem" [ngClass]="{ 'active': selectedTab === 'home' }">
+        <a routerLink="/home" (click)="selectTab('home')">
+            <img *ngIf="selectedTab === 'home'" src="../../assets/icons/home-active.svg" alt="home">
+            <img *ngIf="selectedTab !== 'home'" src="../../assets/icons/home.svg" alt="home">
+            <span>Home</span>
+        </a>
+    </div>
+    <div class="tabItem" [ngClass]="{ 'active': selectedTab === 'search' }">
+        <a routerLink="/search" (click)="selectTab('search')">
+            <img *ngIf="selectedTab === 'search'" src="../../assets/icons/search-tabbar-active.svg" alt="search">
+            <img *ngIf="selectedTab !== 'search'" src="../../assets/icons/search-tabbar.svg" alt="search">
+            <span>Search</span>
+        </a>
+    </div>
+    <div class="tabItem" [ngClass]="{ 'active': selectedTab === 'watchlist' }">
+        <a routerLink="/watchlists" (click)="selectTab('watchlist')">
+            <img *ngIf="selectedTab === 'watchlist'" src="../../assets/icons/watchlist-active.svg" alt="Watchlist">
+            <img *ngIf="selectedTab !== 'watchlist'" src="../../assets/icons/watchlist.svg" alt="Watchlist">
+            <span>Watchlist</span>
+        </a>
+    </div>
+</div>

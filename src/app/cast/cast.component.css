@@ -1,0 +1,44 @@
+.castContainer {
+    text-align: center;
+}
+
+.castContainer p {
+    margin-top: -4px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.castContainer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.castItem {
+    margin: 0 15px 20px 0;
+    text-align: center;
+    width: 20%;
+}
+
+.profileImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Mobil düzenleme */
+@media (max-width: 767px) {
+    .profileImg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .castItem {
+        width: 40%;
+        /* Mobilde 2 tane yan yana */
+    }
+}

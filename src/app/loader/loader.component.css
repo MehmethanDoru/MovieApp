@@ -1,0 +1,34 @@
+.loaderIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+.loaderIcon img {
+  width: 189px;
+}
+
+.clickText {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin-top: 9px;
+  font-style: italic;
+}
+
+.loaderIcon img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .loaderIcon img {
+    width: 120px;
+  }
+
+  .clickText {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}

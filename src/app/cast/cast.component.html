@@ -1,0 +1,10 @@
+<div *ngIf="castList.length > 0">
+    <div class="castContainer">
+        <ul>
+            <li *ngFor="let castMember of getCastWithPhotos()" class="castItem">
+                <img class="profileImg" [src]="getMovieProfileUrl(castMember.profile_path)" alt="{{ castMember.name }}">
+                <p>{{ castMember.name }}</p>
+            </li>
+        </ul>
+    </div>
+</div>
