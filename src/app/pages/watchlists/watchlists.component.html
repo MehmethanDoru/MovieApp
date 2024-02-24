@@ -1,0 +1,49 @@
+<div class="top">
+    <p>.</p>
+    <p>.</p>
+</div>
+<div class="header">
+    <div class="left">
+        <button class="headerButton" (click)="goToHomePage()"><img src="../../assets/icons/back-button.svg" alt=""></button>
+    </div>
+    <div class="center">
+        <h1>Watchlist</h1>
+    </div>
+    <div class="right">
+        <button class="headerButton" (click)="sendReport()"><img src="../../assets/icons/error.svg" alt=""></button>
+    </div>
+</div>
+
+
+<div *ngIf="watchlist.length > 0; else noWatchlist">
+    <div class="result-list">
+        <div class="result" *ngFor="let result of moviesList; let i = index">
+            <img (click)="navigateToDetail(result.id)" [src]="getMoviePosterUrl(result.poster_path)" alt="{{ result.title }}">
+            <div class="info">
+                <div class="info-item">
+                    <p class="title">{{ result.title }}</p>
+                </div>
+                <div class="info-item" *ngIf="result.vote_average">
+                    <img class="dateImg" src="../../assets/icons/vote.svg" alt="">
+                    <p class="vote">{{ result.vote_average }}</p>
+                </div>
+                <div class="info-item">
+                    <img class="dateImg" src="../../assets/icons/category.svg" alt="">
+                    <p class="genre">{{ result.genres[0].name }}</p>
+                </div>
+                <div class="info-item" *ngIf="result.release_date">
+                    <img class="dateImg" src="../../assets/icons/date.svg" alt="">
+                    <p class="date">{{ result.release_date | date:'yyyy'}}</p>
+                </div>  
+                <div class="info-item" *ngIf="result.runtime">
+                    <img class="dateImg" src="../../assets/icons/hour.svg" alt="">
+                    <p class="runtime">{{ result.runtime | timeFormat }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #noWatchlist>
+    <empty-wathclist></empty-wathclist>
+</ng-template>

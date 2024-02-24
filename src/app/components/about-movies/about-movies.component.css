@@ -1,0 +1,14 @@
+.overview {
+    color: #fff;
+    padding: 20px 150px 0 150px;
+    font-weight: 290;
+    font-size: 18px;
+    /* text-align: justify; */
+}
+
+@media screen and (max-width: 768px) {
+    .overview {
+        padding: 20px 50px 0 50px;
+        font-size: 13px;
+    }
+}

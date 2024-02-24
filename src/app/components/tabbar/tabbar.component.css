@@ -1,0 +1,45 @@
+.mobileTab {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #242A32;
+    padding-bottom: 10px;
+    border-top: 1px solid #0296E5;
+    margin-left: -8px;
+}
+
+.tabItem {
+    text-align: center;
+}
+
+.tabItem a {
+    text-decoration: none;
+    color: #67686D;
+}
+
+.tabItem img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+
+}
+
+.tabItem span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.active a {
+    color: #0296E5;
+}
+
+@media screen and (min-width: 768px) {
+    .mobileTab {
+        display: none;
+    }
+}

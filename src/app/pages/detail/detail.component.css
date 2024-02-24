@@ -1,0 +1,323 @@
+.backdropImg {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    opacity: 0.5;
+    border-radius: 7px;
+    margin-top: 60px
+}
+
+.vote {
+    position: absolute;
+    border: 1px solid #000;
+    background-color: rgba(37, 40, 54, 0.542);
+    z-index: 100000000000000;
+    padding: 4px;
+    right: 1%;
+    top: 440px;
+    border-radius: 10px;
+    color: #FF8700;
+    margin-top: -18px;
+}
+
+.vote img {
+    float: left;
+    background-color: transparent;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+}
+
+.voteText {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+}
+
+.posterImg {
+    position: absolute;
+    width: 9%;
+    left: 5%;
+    top: 400px;
+    border-radius: 16px;
+}
+
+.movieTitle {
+    position: absolute;
+    color: #fff;
+    background-color: transparent;
+    left: 15.6%;
+}
+
+.movieOverview {
+    position: absolute;
+    color: #fff;
+    background-color: transparent;
+    top: 65%;
+}
+
+.generalInfoMobile {
+    display: none;
+}
+
+.generalInfo {
+    display: flex;
+    justify-content: start;
+    margin-left: 15.2%;
+    margin-top: 4.3%;
+    color: #92929D;
+}
+
+.generalInfo p {
+    width: 180px;
+}
+
+/* Icon of general info */
+.date img,
+.hour img,
+.category img {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.date p,
+.hour p,
+.category p {
+    margin-top: 6px;
+    margin-left: 40px;
+}
+
+/* Tab Menu */
+.tabDiv {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    padding: 0 8px;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 3px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+}
+
+li.active {
+    border-bottom-color: #4b4e4f;
+}
+
+.cancel img {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    right: 0;
+    margin: 7px 5px 0 0;
+    cursor: pointer;
+}
+
+/* RATE */
+
+.rate {
+    text-align: center;
+}
+
+.rate .rateButton {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px 0;
+    background-color: #274ab2b3;
+}
+
+.rate-section {
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 25px 0 0;
+}
+
+.rate-section::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    filter: blur(25000px);
+    border-radius: 25px 25px 0 0;
+}
+
+.rateTitle {
+    background-color: transparent;
+    font-size: 20px;
+    color: #4E4B66;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px;
+    background-color: transparent;
+}
+
+/* CUSTOM SLIDER from internet */
+.rating {
+    display: inline-block;
+    background-color: transparent;
+    text-align: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    background-color: transparent;
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.rating label:before {
+    content: '\2605';
+    font-size: 30px;
+}
+
+.rating input:checked~label,
+.rating label:hover,
+.rating label:hover~label {
+    color: #6f00ff;
+    transition: color 0.3s;
+}
+
+/* slider end */
+.okRate {
+    text-align: center;
+    /* İçeriği yatayda ortala */
+    background-color: transparent;
+}
+
+.okRateButton {
+    padding: 20px 10%;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: #6327b2;
+    border-radius: 15px;
+    border: #fff;
+}
+
+.okRateButton:hover {
+    background-color: #862aff;
+    border: #fff;
+}
+
+.valueText {
+    background-color: #fff;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .okRateButton {
+        padding: 10px 30%;
+    }
+
+    .vote {
+        top: 195px;
+        right: 3%;
+    }
+
+    .backdropImg {
+        height: 13rem;
+        margin-top: 0;
+    }
+
+    .posterImg {
+        position: absolute;
+        width: 21%;
+        left: 10%;
+        top: 160px;
+    }
+
+    .titleDiv {
+        height: 0px;
+    }
+
+    .movieTitle {
+        top: 220px;
+        left: 35%;
+        font-size: 17px;
+    }
+
+    .generalInfo {
+        display: none;
+    }
+
+    .generalInfoMobile {
+        display: flex;
+        justify-content: start;
+        margin-top: 70px;
+        font-size: 13px;
+        padding: 8px 0 8px 30px;
+        gap: 15px;
+        color: #92929D;
+    }
+
+    .generalInfoMobile p {
+        width: 100px;
+    }
+
+    .dateMobile p,
+    .hourMobile p,
+    .categoryMobile p {
+        margin-top: 0px;
+        margin-left: 4px;
+    }
+
+    .dateMobile img,
+    .hourMobile img,
+    .categoryMobile img {
+        float: left;
+        width: 16px;
+        height: 16px;
+    }
+
+    .rate-section {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .rate-section::before {
+        filter: blur(250px);
+    }
+
+    .rateTitle {
+        margin-top: 7%;
+    }
+}

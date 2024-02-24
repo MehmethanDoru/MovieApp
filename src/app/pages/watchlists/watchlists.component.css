@@ -1,0 +1,125 @@
+.header {
+    display: none;
+}
+
+.result-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 10px;
+    justify-items: center;
+}
+
+
+.result {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.result img {
+    width: 70%;
+    margin-left: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.result p {
+    width: 100%;
+    margin: 0;
+    color: #eee;
+}
+
+
+.result .item {
+    margin-left: 27%;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 6px;
+    text-align: start;
+    margin-left: -15%;
+}
+
+.dateImg {
+    width: 20px;
+    height: 20px;
+}
+
+.info-item .title {
+    margin-left: 37% ;
+}
+@media screen and (max-width: 768px) {
+    .top {
+        display: none;
+    }
+
+    .result-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .result {
+        display: flex;
+        align-items: center; 
+        width: 100%;
+    }
+
+    .result img {
+        width: 30%;
+        margin-right: 10px;
+    }
+    
+    .result .title{
+        text-align: start;
+        margin-left: 15%;
+    }
+
+    .info-item {
+        text-align: start;
+        margin-left: -15%;
+        background-color: transparent;
+    }
+
+    /*  For header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        margin-bottom: -6%;
+    }
+
+    .headerButton img {
+        width: 22px;
+        height: 22px;
+        margin-left: 1.3rem;
+    }
+
+    .searchBar {
+        margin-left: 0;
+    }
+
+    .left,
+    .right {
+        flex: 1;
+    }
+
+    .center {
+        flex: 2;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .center h1 {
+        font-size: 18px;
+    }
+
+    button {
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+}

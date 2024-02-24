@@ -1,0 +1,33 @@
+.title {
+    color: #fff;
+    margin-left: 1%;
+    margin-top: 25px;
+}
+
+.top .left {
+    width: 90%;
+}
+
+.left, .right {
+    margin-top: 50px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 19px;
+        margin-left: 7%;
+    }
+
+    .top {
+        display: block;
+    }
+
+    .left, .right {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,24 @@
+.watchlist {
+    position: absolute;
+    top: 78px;
+    right: 1%;
+    background-color: transparent;
+    z-index: 1954664645;
+}
+
+.watchlist img {
+    background-color: transparent;
+    width: 37px;
+    height: 37px;
+}
+
+@media screen and (max-width: 768px){
+    .watchlist img {
+        width: 27px;
+        height: 27px;
+    }
+    .watchlist {
+        top: 2%;
+        right: 2%;
+    }
+}

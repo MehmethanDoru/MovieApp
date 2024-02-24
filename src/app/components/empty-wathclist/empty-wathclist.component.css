@@ -1,0 +1,27 @@
+.mainImg {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    margin-top: -12%;
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+    margin-top: 8%;
+}
+
+.mainText {
+    font-weight: 500;
+    font-size: 20px;
+    color: #EBEBEF;
+}
+
+.altText {
+    color: #92929D;
+    font-size: 15px;
+    margin-top: -10px;
+}

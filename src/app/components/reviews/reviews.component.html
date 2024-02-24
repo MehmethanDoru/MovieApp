@@ -1,0 +1,22 @@
+<div *ngIf="movieReviews.length == 0">
+  <div class="noReview">
+    <p>No Review Found!</p>
+  </div>
+</div>
+<div *ngIf="movieReviews.length > 0">
+    <ul>
+      <li *ngFor="let review of movieReviews" class="reviewContainer">
+        <p style="background-color: rgba(203, 198, 198, 0);">written by</p>
+        <div class="author">
+          <img src="../../assets/icons/person.svg" alt="">
+          <p>{{ review.author }}</p>
+        </div>
+        <div class="content">
+          <p>&nbsp;{{ review.content }}</p>
+        </div>
+        <div class="date">
+          <p>{{ review.created_at | date: 'mediumDate' }}</p>
+        </div>
+      </li>
+    </ul>
+</div>

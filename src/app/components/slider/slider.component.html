@@ -1,0 +1,6 @@
+<div class="slider">
+    <div class="slide" *ngFor="let movie of topMovies; let i = index">
+        <span class="imageNumber">{{ i + 1 }}</span>
+        <img (click)="navigateToDetail(movie.id)" [src]="getMoviePosterUrl(movie.poster_path)" alt="{{ movie.title }}">
+    </div>
+</div>

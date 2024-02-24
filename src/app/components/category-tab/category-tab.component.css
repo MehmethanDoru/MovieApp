@@ -1,0 +1,79 @@
+.tabDiv {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    padding: 0 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 3px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+}
+
+li.active {
+    border-bottom-color: #4b4e4f;
+}
+
+/* Top list for selected category */
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    padding: 10px;
+}
+
+.movie {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.movie img {
+    width: 70%;
+    margin-left: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.movie p {
+    font-size: 15px;
+    color: #d1cccc;
+    text-align: center;
+    margin-left: -10%;
+    max-height: 22px;
+    margin-bottom: 30px;    
+    overflow-y: hidden;
+}
+
+
+
+/* scrollbar of categorytab */
+.tabDiv::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .movie {
+        width: 33%;
+    }
+
+    .movie img {
+        width: 80%;
+    }
+}

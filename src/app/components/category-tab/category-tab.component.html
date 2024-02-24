@@ -1,0 +1,16 @@
+<div class="tabDiv">
+  <ul>
+    <li *ngFor="let genre of genres" [class.active]="selectedGenre === genre.id" (click)="onGetMoviesByGenreClick(genre.id)">
+      {{ genre.name }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="topMoviesGenre.length > 0">
+  <div class="movie-list">
+    <div class="movie" *ngFor="let movie of topMoviesGenre">
+      <img (click)="navigateToDetail(movie.id)" [src]="getMoviePosterUrl(movie.poster_path)" alt="{{ movie.title }}">
+      <p>{{ movie.title }}</p>
+    </div>
+  </div>
+</div>

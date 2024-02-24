@@ -1,0 +1,30 @@
+.searchBar {
+    margin-top: 25px;
+    margin-right: 2%;
+    width: 250px;
+}
+
+.searchBar input {
+    width: 200px;
+    padding: 11px;
+    outline: none;
+    border: none;
+    background-color: #3A3F47;
+    border-radius: 16px;
+    padding-left: 20px;
+    color: #fff;
+}   
+
+@media screen and (max-width: 768px) {
+    .searchBar {
+        width: 340px;
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+
+    .searchBar input {
+        width: 320px;
+    }
+}
